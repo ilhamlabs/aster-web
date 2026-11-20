@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#233c32" />
+    <meta
+      name="description"
+      content="Meet Aster, a Chromium browser with an AI agent right in your tabs. Download for macOS, Windows, and Linux."
+    />
+    <meta property="og:title" content="Aster — A little more possibility." />
+    <meta
+      property="og:description"
+      content="Your tabs, your tools, and a little help along the way. Meet the browser with an AI agent built in."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://ilhamlabs.github.io/aster-web/assets/aster-icon.png"
+    />
+    <title>Aster — A little more possibility.</title>
+    <link rel="icon" href="./assets/aster-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap container">
+        <a class="wordmark" href="#" aria-label="Aster home"
+          ><img
+            src="./assets/aster-icon.svg"
+            width="34"
+            height="34"
+            alt=""
+          />aster<span class="wordmark-period">.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <svg class="icon"><use href="./assets/icons.svg#menu" /></svg>
+        </button>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="#inside">Inside Aster</a>
+          <a href="#your-call">Your control</a>
+          <a href="#faq">Good to know</a>
+          <a class="button button-small" href="#download">Get Aster</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-title">
+        <a class="release-note" href="#download"
+          ><span class="release-flower" aria-hidden="true">✳</span> A little
+          introduction to Aster <span class="release-version">v0.4.0</span></a
+        >
+        <h1 id="hero-title">
+          Your browser.<br />A little more <em>possibility.</em>
+        </h1>
+        <p class="hero-copy">
+          A familiar place for your tabs. A thoughtful AI agent to help you<br
+            class="desktop-break"
+          />
+          research, fill the gaps, and get things done.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary hero-download" href="#download"
+            ><svg class="icon"><use href="./assets/icons.svg#sparkles" /></svg
+            ><span>Download Aster</span></a
+          >
+          <a class="button button-outline" href="#inside">Take a look inside</a>
+        </div>
+        <p class="hero-platforms">
+          For macOS, Windows &amp; Linux <span aria-hidden="true">·</span> Bring
+          your own AI provider
+        </p>
+
+        <figure class="preview-stage">
+          <div class="stage-ring ring-one" aria-hidden="true"></div>
+          <div class="stage-ring ring-two" aria-hidden="true"></div>
+          <div
+            class="browser-preview"
+            role="img"
+            aria-label="Illustrative Aster browser workspace with selected tabs and an agent planning a relaxed weekend"
+          >
+            <div class="preview-tabbar">
+              <div class="traffic-lights" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+              <span class="preview-brand">✳ aster</span>
+              <div class="preview-tab">
+                <svg class="tiny-icon">
+                  <use href="./assets/icons.svg#globe" /></svg
+                >A weekend in Copenhagen<span aria-hidden="true">×</span>
+              </div>
+              <span class="preview-tab inactive">Saved places</span
+              ><span class="preview-add" aria-hidden="true">+</span>
+            </div>
+            <div class="preview-address">
+              <span aria-hidden="true">‹</span><span aria-hidden="true">›</span
+              ><svg class="tiny-icon">
+                <use href="./assets/icons.svg#globe" />
+              </svg>
+              <div class="address-field">
+                <svg class="tiny-icon">
+                  <use href="./assets/icons.svg#shield" />
+                </svg>
+                A weekend, well spent.
+              </div>
+              <svg class="tiny-icon"><use href="./assets/icons.svg#book" /></svg
+              ><svg class="tiny-icon">
+                <use href="./assets/icons.svg#tabs" />
+              </svg>
+            </div>
+            <div class="preview-body">
+              <aside class="preview-rail" aria-hidden="true">
+                <span class="rail-active"
+                  ><svg class="tiny-icon">
+                    <use href="./assets/icons.svg#globe" /></svg></span
+                ><svg class="tiny-icon">
+                  <use href="./assets/icons.svg#book" /></svg
+                ><svg class="tiny-icon">
+                  <use href="./assets/icons.svg#tabs" /></svg
+                ><svg class="tiny-icon">
+                  <use href="./assets/icons.svg#sparkles" /></svg
+                ><span class="rail-spacer"></span
+                ><span class="rail-avatar">A</span>
+              </aside>
+              <div class="preview-page">
+                <div class="journal-nav">
+                  <span>THE SLOW WEEKEND</span
+                  ><span>Places &nbsp; Stories &nbsp; About</span>
+                </div>
+                <span class="journal-label">COPENHAGEN, DENMARK</span>
+                <h2>A little city.<br />A little <em>slowdown.</em></h2>
+                <p>Leave a little room for the unplanned.</p>
+                <div class="city-illustration" aria-hidden="true">
+                  <div class="sun"></div>
+                  <div class="building building-one">
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="building building-two">
+                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="building building-three">
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="building building-four">
+                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="river">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="journal-bottom">
+                  <span>GOOD DAYS START WITH A LITTLE CURIOSITY.</span
+                  ><span>Take your time.</span>
+                </div>
+              </div>
+              <aside class="preview-agent">
+                <div class="agent-heading">
+                  <span>✳ <strong>Aster</strong> <small>AGENT</small></span
+                  ><span aria-hidden="true">+ &nbsp; ×</span>
+                </div>
+                <div class="agent-context">
+                  <svg class="tiny-icon">
+                    <use href="./assets/icons.svg#tabs" />
+                  </svg>
+                  2 tabs in context
+                </div>
+                <div class="example-user">
+                  Help me make a relaxed weekend plan from these tabs.
+                </div>
+                <div class="example-assistant">
+                  <span class="assistant-flower">✳</span>
+                  <p>
+                    A little exploring, a little downtime. Here's a starting
+                    point from your tabs.
+                  </p>
+                  <div class="example-result">
+                    <svg class="tiny-icon">
+                      <use href="./assets/icons.svg#check" /></svg
+                    ><span
+                      ><strong>A slower Saturday</strong
+                      ><small
+                        >One neighborhood, a canal walk, and time for
+                        coffee.</small
+                      ></span
+                    >
+                  </div>
+                  <div class="example-result">
+                    <svg class="tiny-icon">
+                      <use href="./assets/icons.svg#check" /></svg
+                    ><span
+                      ><strong>A curious Sunday</strong
+                      ><small
+                        >A museum morning. The afternoon is yours.</small
+                      ></span
+                    >
+                  </div>
+                  <span class="example-source"
+                    >Based on your selected tabs</span
+                  >
+                </div>
+                <div class="example-composer">
+                  <span>What would you like to do next?</span>
+                  <div>
+                    <small>+ &nbsp; Current tabs</small
+                    ><svg class="tiny-icon">
+                      <use href="./assets/icons.svg#shield" />
+                    </svg>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+          <figcaption>
+            <span class="caption-flower" aria-hidden="true">✳</span> Your tabs.
+            Your agent. Your call.
+            <span class="illustration-note">Illustrative workspace</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section
+        class="provider-strip container"
+        aria-label="Supported AI providers"
+      >
+        <p>A little help from your preferred AI.</p>
+        <div>
+          <span>OpenAI</span><span>Anthropic</span
+          ><span class="gemini-word">Gemini</span
+          ><span class="ollama-word">Ollama</span>
+        </div>
+        <small>Connect your own account, or use a local Ollama model.</small>
+      </section>
+
+      <section
+        class="inside-section section-space container"
+        id="inside"
+        aria-labelledby="inside-title"
+      >
+        <div class="section-intro">
+          <p class="eyebrow">FAMILIAR BROWSER. NEW POSSIBILITIES.</p>
+          <h2 id="inside-title">
+            For the things you came<br />here to <em>actually do.</em>
+          </h2>
+          <p>
+            Aster pairs a Chromium browser with an agent that works in the same
+            tabs and sessions as you. Less explaining where you are. More moving
+            things along.
+          </p>
+        </div>
+        <div class="scenario-layout">
+          <div
+            class="scenario-tabs"
+            role="tablist"
+            aria-label="Explore Aster features"
+            aria-orientation="vertical"
+          >
+            <button
+              id="research-tab"
+              class="scenario-tab"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="scenario-panel"
+              data-scenario="research"
+            >
+              <svg class="feature-icon">
+                <use href="./assets/icons.svg#search" /></svg
+              ><span
+                ><strong>Follow your curiosity.</strong
+                ><span>Research across the tabs you choose.</span></span
+              ><span class="scenario-dot" aria-hidden="true"></span>
+            </button>
+            <button
+              id="forms-tab"
+              class="scenario-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="scenario-panel"
+              tabindex="-1"
+              data-scenario="forms"
+            >
+              <svg class="feature-icon">
+                <use href="./assets/icons.svg#check" /></svg
+              ><span
+                ><strong>Move the busywork along.</strong
+                ><span>Work through forms, one step at a time.</span></span
+              ><span class="scenario-dot" aria-hidden="true"></span>
+            </button>
+            <button
+              id="documents-tab"
+              class="scenario-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="scenario-panel"
+              tabindex="-1"
+              data-scenario="documents"
+            >
+              <svg class="feature-icon">
+                <use href="./assets/icons.svg#file" /></svg
+              ><span
+                ><strong>Keep the useful stuff close.</strong
+                ><span>Save the documents you use again.</span></span
+              ><span class="scenario-dot" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div
+            class="scenario-panel"
+            id="scenario-panel"
+            role="tabpanel"
+            aria-labelledby="research-tab"
+            tabindex="0"
+          >
+            <div class="scenario-panel-header">
+              <span class="panel-tag">IN YOUR TABS</span
+              ><span aria-hidden="true">✳</span>
+            </div>
+            <div data-scene="research">
+              <div class="sample-tabs">
+                <span
+                  ><svg class="tiny-icon">
+                    <use href="./assets/icons.svg#globe" />
+                  </svg>
+                  Product guide</span
+                ><span
+                  ><svg class="tiny-icon">
+                    <use href="./assets/icons.svg#book" />
+                  </svg>
+                  Your shortlist</span
+                >
+              </div>
+              <div class="scenario-question">
+                “Compare these two options for me.”
+              </div>
+              <div class="comparison-table">
+                <div>
+                  <span>What matters to you</span><span>Option A</span
+                  ><span>Option B</span>
+                </div>
+                <div>
+                  <span>Fits the brief</span><span>✓</span><span>✓</span>
+                </div>
+                <div>
+                  <span>Good to know</span><span>More features</span
+                  ><span>Simpler setup</span>
+                </div>
+                <div>
+                  <span>Where it came from</span><span>Selected tab</span
+                  ><span>Selected tab</span>
+                </div>
+              </div>
+              <p class="scenario-description">
+                Summaries and comparisons grounded in the pages you select, with
+                sources you can revisit.
+              </p>
+            </div>
+            <div data-scene="forms" hidden>
+              <div class="sample-tabs">
+                <span
+                  ><svg class="tiny-icon">
+                    <use href="./assets/icons.svg#file" />
+                  </svg>
+                  Application form</span
+                ><span>Step 3 of 4</span>
+              </div>
+              <div class="scenario-question">
+                “Help me finish this application.”
+              </div>
+              <div class="form-example">
+                <div>
+                  <span>Contact details</span
+                  ><span class="done-label">Added</span>
+                </div>
+                <div>
+                  <span>Résumé</span><span class="done-label">Attached</span>
+                </div>
+                <div>
+                  <span>Available start date</span
+                  ><span class="question-label">Your answer needed</span>
+                </div>
+              </div>
+              <p class="scenario-description">
+                Your agent can fill supported fields, reuse your answers, and
+                ask when a required detail is missing.
+              </p>
+            </div>
+            <div data-scene="documents" hidden>
+              <div class="sample-tabs">
+                <span
+                  ><svg class="tiny-icon">
+                    <use href="./assets/icons.svg#file" />
+                  </svg>
+                  Saved documents</span
+                ><span>Available to your agent</span>
+              </div>
+              <div class="scenario-question">
+                “Use my résumé and portfolio.”
+              </div>
+              <div class="document-example">
+                <div>
+                  <span class="document-badge">PDF</span
+                  ><span
+                    ><strong>Résumé.pdf</strong
+                    ><small>Your default résumé</small></span
+                  ><span class="done-label">Saved</span>
+                </div>
+                <div>
+                  <span class="document-badge">PDF</span
+                  ><span
+                    ><strong>Portfolio.pdf</strong
+                    ><small>Work you're proud of</small></span
+                  ><span class="done-label">Saved</span>
+                </div>
+                <div>
+                  <span class="document-badge">PDF</span
+                  ><span
+                    ><strong>Cover letter.pdf</strong
+                    ><small>Written for the job at hand</small></span
+                  ><span class="draft-label">Draft</span>
+                </div>
+              </div>
+              <p class="scenario-description">
+                Save documents once. Let the agent use relevant files and draft
+                cover letters from your actual experience.
+              </p>
+            </div>
+            <p class="sample-caption">Example content, for illustration.</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="control-section"
+        id="your-call"
+        aria-labelledby="control-title"
+      >
+        <div class="container control-layout">
+          <div>
+            <p class="eyebrow">A HELPFUL AGENT. A HUMAN IN CHARGE.</p>
+            <h2 id="control-title">
+              A little help.<br /><em>On your terms.</em>
+            </h2>
+            <p>
+              Decide how much room to give your agent. Keep approvals close,
+              give a task more freedom, or stop it at any time.
+            </p>
+            <div class="control-note">
+              <svg class="icon"><use href="./assets/icons.svg#shield" /></svg
+              ><span
+                >Your provider keys are encrypted by your operating system.
+                Private windows keep AI and task history off.</span
+              >
+            </div>
+          </div>
+          <div class="permission-preview">
+            <div class="permission-heading">
+              <svg class="icon"><use href="./assets/icons.svg#shield" /></svg
+              ><span>Task permissions</span><small>YOU CHOOSE</small>
+            </div>
+            <div class="permission-option">
+              <span class="radio-mark"></span
+              ><span
+                ><strong>Ask every time</strong
+                ><small>Review each action before it happens.</small></span
+              >
+            </div>
+            <div class="permission-option permission-selected">
+              <span class="radio-mark"></span
+              ><span
+                ><strong>Restricted</strong
+                ><small
+                  >Routine steps can proceed. Important actions need
+                  approval.</small
+                ></span
+              ><span class="permission-check" aria-hidden="true">✓</span>
+            </div>
+            <div class="permission-option">
+              <span class="radio-mark"></span
+              ><span
+                ><strong>All actions for this task</strong
+                ><small
+                  >Let it proceed, including uploads and submissions.</small
+                ></span
+              >
+            </div>
+            <p>
+              Aster starts with “Ask every time.” This is an illustrative
+              preview.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="downloads-section section-space container"
+        id="download"
+        aria-labelledby="download-title"
+      >
+        <div class="download-intro">
+          <div>
+            <p class="eyebrow">MAKE YOURSELF AT HOME.</p>
+            <h2 id="download-title">A little more <em>Aster.</em></h2>
+            <p>Find your version. Bring your tabs. See where it takes you.</p>
+          </div>
+          <span class="version-label"
+            >DESKTOP PREVIEW <strong>v0.4.0</strong></span
+          >
+        </div>
+        <div class="download-grid">
+          <article class="download-card" data-platform-card="mac">
+            <div class="platform-top">
+              <svg class="platform-icon">
+                <use href="./assets/icons.svg#mac" /></svg
+              ><span class="recommended" data-recommended="mac" hidden
+                >For your device</span
+              >
+            </div>
+            <h3>macOS</h3>
+            <p>For the Mac on your desk.</p>
+            <fieldset class="architecture-choice">
+              <legend class="sr-only">Mac processor</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="mac-architecture"
+                  value="mac-arm64"
+                  checked
+                /><span>Apple Silicon</span></label
+              ><label
+                ><input
+                  type="radio"
+                  name="mac-architecture"
+                  value="mac-x64"
+                /><span>Intel</span></label
+              >
+            </fieldset>
+            <a
+              class="button platform-download"
+              data-download="mac-arm64"
+              id="mac-download"
+              href="https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.0-mac-arm64.dmg"
+              >Download for macOS</a
+            ><noscript
+              ><p class="no-js-download">
+                <a
+                  href="https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.0-mac-x64.dmg"
+                  >Download Intel Mac version</a
+                >
+              </p></noscript
+            >
+            <p class="file-meta" id="mac-file-meta">Apple Silicon · .dmg</p>
+            <p class="install-hint">
+              Open the DMG. Drag Aster to Applications.
+            </p>
+          </article>
+          <article class="download-card" data-platform-card="windows">
+            <div class="platform-top">
+              <svg class="platform-icon">
+                <use href="./assets/icons.svg#windows" /></svg
+              ><span class="recommended" data-recommended="windows" hidden
+                >For your device</span
+              >
+            </div>
+            <h3>Windows</h3>
+            <p>A familiar space, with a fresh start.</p>
+            <div class="platform-detail">
+              <span>64-bit</span><span>Installer</span>
+            </div>
+            <a
+              class="button platform-download"
+              data-download="win-x64"
+              href="https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.0-win-x64.exe"
+              >Download for Windows</a
+            >
+            <p class="file-meta" data-file-meta="win-x64">x64 · .exe</p>
+            <p class="install-hint">
+              Run the installer and follow the setup steps.
+            </p>
+          </article>
+          <article class="download-card" data-platform-card="linux">
+            <div class="platform-top">
+              <svg class="platform-icon">
+                <use href="./assets/icons.svg#linux" /></svg
+              ><span class="recommended" data-recommended="linux" hidden
+                >For your device</span
+              >
+            </div>
+            <h3>Linux</h3>
+            <p>Your setup. Aster fits right in.</p>
+            <div class="platform-detail">
+              <span>x86_64</span><span>AppImage</span>
+            </div>
+            <a
+              class="button platform-download"
+              data-download="linux-x64"
+              href="https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.0-linux-x64.AppImage"
+              >Download for Linux</a
+            >
+            <p class="file-meta" data-file-meta="linux-x64">
+              x86_64 · .AppImage
+            </p>
+            <p class="install-hint">
+              Mark the AppImage as executable, then open it.
+            </p>
+          </article>
+        </div>
+        <div class="download-fineprint">
+          <p>
+            <svg class="tiny-icon"><use href="./assets/icons.svg#book" /></svg>
+            Early preview, unsigned. macOS builds are not notarized. See the
+            installation notes below before opening.
+          </p>
+          <a
+            data-checksums
+            href="https://raw.githubusercontent.com/ilhamlabs/aster-web/main/downloads/SHA256SUMS.txt"
+            >File checksums</a
+          >
+        </div>
+        <p class="runtime-note">
+          Chromium and the agent runtime are included. No separate Python or
+          Node.js installation needed.
+        </p>
+      </section>
+
+      <section
+        class="faq-section container"
+        id="faq"
+        aria-labelledby="faq-title"
+      >
+        <div>
+          <p class="eyebrow">BEFORE YOU SETTLE IN.</p>
+          <h2 id="faq-title">A few things<br /><em>worth knowing.</em></h2>
+          <p>
+            Aster is an early desktop preview. Your feedback helps shape what
+            comes next.
+          </p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              Do I need an AI subscription?<svg class="icon">
+                <use href="./assets/icons.svg#plus" />
+              </svg>
+            </summary>
+            <p>
+              You can browse without connecting an AI provider. To use the
+              agent, connect your own OpenAI, Anthropic, or Gemini API account
+              in Settings, or run a local Ollama model. API access and billing
+              are handled by your provider, and provider API charges may apply.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Which Mac download should I choose?<svg class="icon">
+                <use href="./assets/icons.svg#plus" />
+              </svg>
+            </summary>
+            <p>
+              Open the Apple menu and choose About This Mac. If you see “Chip”
+              and an Apple M-series name, choose Apple Silicon. If you see an
+              Intel processor, choose Intel.
+            </p>
+          </details>
+          <details>
+            <summary>
+              What should I expect when installing?<svg class="icon">
+                <use href="./assets/icons.svg#plus" />
+              </svg>
+            </summary>
+            <p>
+              These preview installers are unsigned, and the Mac builds are not
+              notarized. Your operating system may show a security warning. On
+              macOS, you may need to allow Aster in System Settings → Privacy
+              &amp; Security after trying to open it. On Windows, check the
+              downloaded file and its checksum before deciding whether to run an
+              unrecognized app. On Linux, allow the AppImage to run as a program
+              in its file properties.
+            </p>
+          </details>
+          <details>
+            <summary>
+              What can the agent do?<svg class="icon">
+                <use href="./assets/icons.svg#plus" />
+              </svg>
+            </summary>
+            <p>
+              It can summarize selected tabs, compare pages, work through
+              supported browser forms, use saved documents, and draft cover
+              letters using your information. It asks for missing details and
+              follows your selected approval mode. Some sites and controls need
+              manual help, including passwords and CAPTCHAs. Keep an eye on
+              important tasks and review the outcome.
+            </p>
+          </details>
+          <details>
+            <summary>
+              What happens to my data?<svg class="icon">
+                <use href="./assets/icons.svg#plus" />
+              </svg>
+            </summary>
+            <p>
+              Browser and task data are stored in your local Aster profile.
+              Using the agent can send selected page content, relevant document
+              text, and your requests to the provider you configure. Saved
+              documents remain until you remove them, separately from chat
+              history. Your provider's own data policies apply. This website has
+              no analytics or account system.
+              <a href="./privacy.html">Read the website privacy note.</a>
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="closing-section container">
+        <img src="./assets/aster-icon.svg" width="58" height="58" alt="" />
+        <h2>Follow your curiosity.<br /><em>We'll keep a tab open.</em></h2>
+        <a class="button button-primary" href="#download">Find your download</a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a class="wordmark" href="#" aria-label="Aster home"
+          ><img
+            src="./assets/aster-icon.svg"
+            width="28"
+            height="28"
+            alt=""
+          />aster<span class="wordmark-period">.</span></a
+        ><span>A more thoughtful internet.</span>
+        <nav aria-label="Footer navigation">
+          <a href="#download">Downloads</a><a href="./privacy.html">Privacy</a
+          ><a
+            href="https://github.com/ilhamlabs"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ilhamlabs</a
+          >
+        </nav>
+        <small>© <span data-year>2026</span> Aster</small>
+      </div>
+    </footer>
+  </body>
+</html>

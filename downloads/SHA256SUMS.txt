@@ -1,0 +1,4 @@
+ee9b9e01016f83b4272f75200a0dd3574fc6a83ae3d0652cc0898a72ede90bab  Aster-0.4.0-mac-arm64.dmg
+05fc5d2500292c925e75f33a056a0de7ae7f87e1531108cf3e37c0b0ddcdeee1  Aster-0.4.0-mac-x64.dmg
+934cdead091c1dafe613d932e702f2e84be5bc0fbcc7204c27053dc264f555e2  Aster-0.4.0-win-x64.exe
+5fae1fea70be90f5f6b349687b28af0fb771f0df4c3bb815ff9b82128b08477f  Aster-0.4.0-linux-x64.AppImage
