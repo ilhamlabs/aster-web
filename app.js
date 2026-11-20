@@ -93,7 +93,7 @@ function setMacArchitecture(key) {
     macLink.dataset.download = key;
     macLink.href =
       manifest?.platforms?.[key]?.url ??
-      `https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.0-${key}.dmg`;
+      `https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.1-${key}.dmg`;
     macLink.setAttribute(
       "aria-label",
       `Download for macOS, ${key === "mac-arm64" ? "Apple Silicon" : "Intel"}`,
@@ -143,7 +143,10 @@ if (platform === "mac" && navigator.userAgentData?.getHighEntropyValues) {
 
 async function loadDownloads() {
   try {
-    const response = await fetch(new URL("./downloads.json", import.meta.url));
+    const response = await fetch(
+      new URL("./downloads.json?v=0.4.1", import.meta.url),
+      { cache: "no-cache" },
+    );
     if (!response.ok) return;
     manifest = await response.json();
     const allowed = new Set(["mac-arm64", "mac-x64", "win-x64", "linux-x64"]);

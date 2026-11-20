@@ -26,7 +26,7 @@ pnpm test
 
 ## Installer files and Git LFS
 
-All four v0.4.0 installers live in `downloads/` and are tracked by Git LFS, as configured in `.gitattributes`. The Mac downloads are separate for Apple Silicon and Intel. Windows is x64 NSIS; Linux is x86_64 AppImage. These are unsigned development previews, and macOS builds are not notarized.
+All four v0.4.1 installers live in `downloads/` and are tracked by Git LFS, as configured in `.gitattributes`. This release includes the agent prompt-cache improvements and more complete token/cost accounting. `downloads/release-0.4.1.json` records the source commit, build run and artifact checksums. The Mac downloads are separate for Apple Silicon and Intel. Windows is x64 NSIS; Linux is x86_64 AppImage. These are unsigned development previews, and macOS builds are not notarized.
 
 To fetch actual installers after cloning:
 
@@ -46,7 +46,7 @@ node scripts/update-downloads.mjs 0.5.0
 node scripts/check.mjs --installers
 ```
 
-Use the canonical `linux-x64` filename in this repository for the Linux AppImage (the desktop builder may call that architecture `x86_64`). Then update the version text and no-JavaScript fallback URLs in `index.html`, and the fallback filename in `app.js`. Run checks and browser tests, stage the new files and metadata, verify `git lfs ls-files`, then commit/push. Keep old versioned files available if their download URLs are still in use.
+Use the canonical `linux-x64` filename in this repository for the Linux AppImage (the desktop builder may call that architecture `x86_64`). Then update the version text, no-JavaScript fallback URLs and script version query in `index.html`, and the fallback filename and manifest version query in `app.js`. The versioned requests keep a cached older manifest or script from overriding the new download links. Run checks and browser tests, stage the new files and metadata, verify `git lfs ls-files`, then commit/push. Keep old versioned files available if their download URLs are still in use.
 
 After publication, run `pnpm test:links` to verify anonymous downloads return installer bytes rather than pointer files and that the published checksums match. This makes short ranged requests and cancels the body after the first chunk; it does not download every installer again.
 
