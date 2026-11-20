@@ -1,0 +1,60 @@
+{
+  "version": "0.4.3",
+  "sourceCommit": "bd2597d68b58148d71bca080e459ca50e6128351",
+  "sourceTag": "v0.4.3",
+  "buildRunId": 44834211569,
+  "buildUrl": "https://github.com/ilhamlabs/aster/actions/runs/44834211569",
+  "platforms": {
+    "mac-arm64": {
+      "platform": "mac-arm64",
+      "filename": "Aster-0.4.3-mac-arm64.dmg",
+      "sha256": "f2a3007508c48078e066b82dbd8701795ad2db0b28f9eb915b8435f0ef6c52c2",
+      "size": 190388342,
+      "artifactId": 14677349090,
+      "artifactArchiveSha256": "ca0610712d96e09b01d4a9ffe0e83956a7480e8700af4b39500626335cc7b07d"
+    },
+    "mac-x64": {
+      "platform": "mac-x64",
+      "filename": "Aster-0.4.3-mac-x64.dmg",
+      "sha256": "c8e32f6ff5f1601274acec74f33513f6bee9402275bec8f9da5ab003c702a67d",
+      "size": 194328757,
+      "artifactId": 14678162263,
+      "artifactArchiveSha256": "9ce2e160085e77232ccb577112573832c3681c2886a11836f43cc398a695e77f"
+    },
+    "win-x64": {
+      "platform": "win-x64",
+      "filename": "Aster-0.4.3-win-x64.exe",
+      "sha256": "8aae5cebdcb743f111f993c38c41d18b8174fb4eee346154bfe60317820704b9",
+      "size": 187203178,
+      "artifactId": 14678360507,
+      "artifactArchiveSha256": "ee1813735ed41d6294b8cfd036e2808c560bcacd46fd5cacc252f78602977e92"
+    },
+    "linux-x64": {
+      "platform": "linux-x64",
+      "filename": "Aster-0.4.3-linux-x64.AppImage",
+      "sha256": "25fd23b2812cd39ad22a7c2efb726951ddb360625ffece219f9a09820135aee4",
+      "size": 211474417,
+      "artifactId": 14677292833,
+      "artifactArchiveSha256": "095c869fa973f02ee25c43bf5c369d34b34fae9aa814177ec4d394f410b68343"
+    }
+  },
+  "verification": {
+    "checksRunId": 44834182976,
+    "checksUrl": "https://github.com/ilhamlabs/aster/actions/runs/44834182976",
+    "desktopUnitTestsPassed": 79,
+    "desktopIntegrationTestsPassed": 31,
+    "windowsDesktopIntegrationTestsPassed": 3,
+    "backendTestsPassed": 80,
+    "backendOptionalTestsSkipped": 1,
+    "packagedSmoke": {
+      "platform": "mac-x64",
+      "result": "passed"
+    },
+    "windowsSigning": "unsigned preview; signing setup deferred",
+    "providerApiCalls": 0,
+    "dmgIntegrity": {
+      "mac-arm64": "passed",
+      "mac-x64": "passed"
+    }
+  }
+}

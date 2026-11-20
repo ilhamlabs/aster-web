@@ -50,6 +50,20 @@ for (const [key, extension] of Object.entries(expected)) {
   }
 }
 const html = await readFile(new URL("index.html", root), "utf8");
+const script = await readFile(new URL("app.js", root), "utf8");
+assert.ok(
+  html.includes(`src="./app.js?v=${data.version}"`),
+  "The page must request the current release script to refresh cached download links.",
+);
+assert.ok(
+  script.includes(`downloads.json?v=${data.version}`),
+  "The script must request the current release manifest.",
+);
+for (const item of Object.values(data.platforms))
+  assert.ok(
+    html.includes(item.url),
+    "No-JavaScript download URLs must match the release manifest.",
+  );
 assert.ok(html.includes('name="description"'));
 assert.ok(html.includes('name="viewport"'));
 assert.ok(

@@ -26,7 +26,7 @@ pnpm test
 
 ## Installer files and Git LFS
 
-All four v0.4.2 installers live in `downloads/` and are tracked by Git LFS, as configured in `.gitattributes`. This release adds automatic version checks, a compact update notice, a manual Settings update check, and a fix that preserves unrelated preferences when a setting is changed. It retains the prompt-cache improvements from 0.4.1. `downloads/release-0.4.2.json` records the source commit, build run and artifact checksums. The Mac downloads are separate for Apple Silicon and Intel. Windows is x64 NSIS; Linux is x86_64 AppImage. These are unsigned development previews, and macOS builds are not notarized.
+All four v0.4.3 installers live in `downloads/` and are tracked by Git LFS, as configured in `.gitattributes`. This release puts native Windows/Linux window controls in the tabs row, removes bottom footers, moves zoom reset to the toolbar, and expands web-page right-click menus with link tabs/windows/private windows, image actions, selected-text search, editing, page saving, printing and inspection. It retains automatic update notices, profile preservation and prompt-cache improvements. `downloads/release-0.4.3.json` records the source commit, build run, verification and artifact checksums. The Mac downloads are separate for Apple Silicon and Intel. Windows is x64 NSIS; Linux is x86_64 AppImage. These are unsigned development previews, and macOS builds are not notarized.
 
 To fetch actual installers after cloning:
 
