@@ -52,11 +52,13 @@ After publication, run `pnpm test:links` to verify anonymous downloads return in
 
 ## Hosting
 
-The included GitHub Actions workflow builds and tests the site, then publishes `dist/` to GitHub Pages for a public `main` branch. It also runs on GitHub's `public` event when the repository changes from private to public. The intended default URL is `https://ilhamlabs.github.io/aster-web/`.
+The included GitHub Actions workflow builds and tests the site, then publishes `dist/` to GitHub Pages for a public `main` branch. It also runs on GitHub's `public` event when the repository changes from private to public. The public website is **https://aster.ilhamlabs.io/**. The tracked `CNAME` file is included in the build, and canonical links and social images use this custom domain.
 
 In repository Settings → Pages, select **GitHub Actions** as the build source. Pages must be enabled before the deploy job runs. If needed, run **Verify and publish Aster website** manually after enabling Pages. No deployment secret or provider API key is needed. Changing repository visibility is left to the repository owner.
 
 The same `dist/` output can be uploaded to another static web host. No server rewrite or environment variable is required. The download files continue to be served from Git LFS.
+
+Support, bug reports, and feedback: **ayaz@ilhamlabs.io**. Contact links are available in the FAQ, footer, and privacy page.
 
 ## Assets and verification
 

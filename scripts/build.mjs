@@ -9,6 +9,7 @@ for (const name of [
   "styles.css",
   "app.js",
   "downloads.json",
+  "CNAME",
   "assets",
 ]) {
   await cp(new URL("../" + name, import.meta.url), new URL(name, output), {
