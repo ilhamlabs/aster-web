@@ -1,0 +1,66 @@
+{
+  "version": "0.4.2",
+  "sourceCommit": "8fd12abfcec2b0c130541a774f214a252fa8f236",
+  "sourceTag": "v0.4.2",
+  "buildRunId": 44824447861,
+  "buildUrl": "https://github.com/ilhamlabs/aster/actions/runs/44824447861",
+  "platforms": {
+    "mac-arm64": {
+      "platform": "mac-arm64",
+      "filename": "Aster-0.4.2-mac-arm64.dmg",
+      "sha256": "837985b8c2e4e4e066cde1f6960e72ccf6cad1292dd528c1b45664d977957b60",
+      "size": 190388724,
+      "artifactId": 14673297378,
+      "artifactArchiveSha256": "b2c2a6c96eba3864d059b3caf20e64027d7f416cda1e35bb21192fdcddc91675"
+    },
+    "linux-x64": {
+      "platform": "linux-x64",
+      "filename": "Aster-0.4.2-linux-x64.AppImage",
+      "sha256": "3beb202f92b33a9b531fbdcdb54fbe28bfdb91fcf50632c883987df441cc6b9b",
+      "size": 211474662,
+      "artifactId": 14673292316,
+      "artifactArchiveSha256": "edcac0b504df7e64dfccc50b85fc6ae71ac9bd7a2b64bb88e5dcb3b1d3847652"
+    },
+    "win-x64": {
+      "platform": "win-x64",
+      "filename": "Aster-0.4.2-win-x64.exe",
+      "sha256": "fa85b020defe3908812b938949e202d3190db0a5e8b6bc59d0bdf82a10658bfc",
+      "size": 187195176,
+      "artifactId": 14672888418,
+      "artifactArchiveSha256": "64044917285d3b6d841daff38c21fb2a66b2b03589de7070d01dec1e51db8bd7"
+    },
+    "mac-x64": {
+      "platform": "mac-x64",
+      "filename": "Aster-0.4.2-mac-x64.dmg",
+      "sha256": "361385448ccb85ac84e3b619487bc6ac70d136a12ae232e09f14f870d360e061",
+      "size": 194325514,
+      "artifactId": 14674860624,
+      "artifactArchiveSha256": "cf9d1413b098caccd8bac394e735d6648f83e5bcb740e966ad052b69bfb75860"
+    }
+  },
+  "verification": {
+    "checksRunId": 44824422104,
+    "desktopUnitTestsPassed": 65,
+    "desktopIntegrationTestsPassed": 28,
+    "backendTestsPassed": 80,
+    "backendOptionalTestsSkipped": 1,
+    "packagedUpgrade": {
+      "platform": "mac-x64",
+      "fromVersion": "0.4.1",
+      "toVersion": "0.4.2",
+      "result": "passed",
+      "osCredentials": "real OS service, dummy key only",
+      "preserved": [
+        "persistent sign-in cookie",
+        "tabs",
+        "bookmarks",
+        "browser settings",
+        "agent configuration",
+        "saved document and file bytes",
+        "encrypted credential ciphertext and decryption"
+      ],
+      "providerApiCalls": 0
+    },
+    "windowsSigning": "unsigned preview; no signing account configured"
+  }
+}

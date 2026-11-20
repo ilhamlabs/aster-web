@@ -1,5 +1,5 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "releaseDate": "2026-11-20",
   "releaseUrl": "https://github.com/ilhamlabs/aster-web/tree/main/downloads",
   "checksumsUrl": "https://raw.githubusercontent.com/ilhamlabs/aster-web/main/downloads/SHA256SUMS.txt",
@@ -7,34 +7,34 @@
   "platforms": {
     "mac-arm64": {
       "label": "macOS \u00b7 Apple Silicon",
-      "filename": "Aster-0.4.1-mac-arm64.dmg",
-      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.1-mac-arm64.dmg",
-      "sha256": "487eb3ce079366e35deaff496e5be96f59aa7e1a8a1e6614fca8f7a65a4b6520",
-      "size": 190368650
+      "filename": "Aster-0.4.2-mac-arm64.dmg",
+      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.2-mac-arm64.dmg",
+      "sha256": "837985b8c2e4e4e066cde1f6960e72ccf6cad1292dd528c1b45664d977957b60",
+      "size": 190388724
     },
     "mac-x64": {
       "label": "macOS \u00b7 Intel",
-      "filename": "Aster-0.4.1-mac-x64.dmg",
-      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.1-mac-x64.dmg",
-      "sha256": "e81feb02f4a8b457e33dfaa9a674bc063d26b491993b88a2a92fbe4742fa1674",
-      "size": 194313020
+      "filename": "Aster-0.4.2-mac-x64.dmg",
+      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.2-mac-x64.dmg",
+      "sha256": "361385448ccb85ac84e3b619487bc6ac70d136a12ae232e09f14f870d360e061",
+      "size": 194325514
     },
     "win-x64": {
       "label": "Windows \u00b7 x64",
-      "filename": "Aster-0.4.1-win-x64.exe",
-      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.1-win-x64.exe",
-      "sha256": "c2cbc39cbb17c041a8d95dac650f248ce1553c81a28539b98aacbde4b6e3f3e8",
-      "size": 187185823
+      "filename": "Aster-0.4.2-win-x64.exe",
+      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.2-win-x64.exe",
+      "sha256": "fa85b020defe3908812b938949e202d3190db0a5e8b6bc59d0bdf82a10658bfc",
+      "size": 187195176
     },
     "linux-x64": {
       "label": "Linux \u00b7 x86_64",
-      "filename": "Aster-0.4.1-linux-x64.AppImage",
-      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.1-linux-x64.AppImage",
-      "sha256": "989868bae2fd51d3cc0c8bc86151301d9d86156d67539a47a113ac82813265cb",
-      "size": 211465861
+      "filename": "Aster-0.4.2-linux-x64.AppImage",
+      "url": "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/Aster-0.4.2-linux-x64.AppImage",
+      "sha256": "3beb202f92b33a9b531fbdcdb54fbe28bfdb91fcf50632c883987df441cc6b9b",
+      "size": 211474662
     }
   },
-  "sourceCommit": "7e8fd149b5d3eda10e2b18ce14785580221ca880",
-  "sourceTag": "v0.4.1",
-  "buildRunId": 44818805352
+  "sourceCommit": "8fd12abfcec2b0c130541a774f214a252fa8f236",
+  "sourceTag": "v0.4.2",
+  "buildRunId": 44824447861
 }

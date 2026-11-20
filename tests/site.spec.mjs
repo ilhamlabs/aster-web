@@ -4,8 +4,8 @@ const base =
   "https://media.githubusercontent.com/media/ilhamlabs/aster-web/main/downloads/";
 
 for (const [platform, label, filename] of [
-  ["Windows", "Windows", "Aster-0.4.1-win-x64.exe"],
-  ["Linux", "Linux", "Aster-0.4.1-linux-x64.AppImage"],
+  ["Windows", "Windows", "Aster-0.4.2-win-x64.exe"],
+  ["Linux", "Linux", "Aster-0.4.2-linux-x64.AppImage"],
 ]) {
   test(`offers a direct ${label} download on narrow screens`, async ({
     page,
@@ -50,10 +50,10 @@ test("renders the site without broken local assets or script errors", async ({
     page
       .getByRole("link", { name: "Download for Windows", exact: true })
       .last(),
-  ).toHaveAttribute("href", base + "Aster-0.4.1-win-x64.exe");
+  ).toHaveAttribute("href", base + "Aster-0.4.2-win-x64.exe");
   await expect(
     page.getByRole("link", { name: "Download for Linux", exact: true }).last(),
-  ).toHaveAttribute("href", base + "Aster-0.4.1-linux-x64.AppImage");
+  ).toHaveAttribute("href", base + "Aster-0.4.2-linux-x64.AppImage");
   expect(
     await page.evaluate(() =>
       document.fonts.check('400 20px "DM Serif Display"'),
@@ -75,16 +75,16 @@ test("switches between real Mac architecture files and accurate labels", async (
   const link = page.locator("#mac-download");
   await expect(link).toHaveAttribute(
     "href",
-    base + "Aster-0.4.1-mac-arm64.dmg",
+    base + "Aster-0.4.2-mac-arm64.dmg",
   );
   await page.getByRole("radio", { name: "Intel", exact: true }).check();
-  await expect(link).toHaveAttribute("href", base + "Aster-0.4.1-mac-x64.dmg");
+  await expect(link).toHaveAttribute("href", base + "Aster-0.4.2-mac-x64.dmg");
   await expect(link).toHaveAccessibleName("Download for macOS, Intel");
   await expect(page.locator("#mac-file-meta")).toContainText("Intel");
   await page.getByRole("radio", { name: "Apple Silicon" }).check();
   await expect(link).toHaveAttribute(
     "href",
-    base + "Aster-0.4.1-mac-arm64.dmg",
+    base + "Aster-0.4.2-mac-arm64.dmg",
   );
 });
 
@@ -162,11 +162,11 @@ test("keeps direct downloads and privacy information usable without JavaScript",
   await page.goto("http://127.0.0.1:4174/");
   await expect(page.locator("#mac-download")).toHaveAttribute(
     "href",
-    base + "Aster-0.4.1-mac-arm64.dmg",
+    base + "Aster-0.4.2-mac-arm64.dmg",
   );
   await expect(
     page.getByRole("link", { name: "Download Intel Mac version" }),
-  ).toHaveAttribute("href", base + "Aster-0.4.1-mac-x64.dmg");
+  ).toHaveAttribute("href", base + "Aster-0.4.2-mac-x64.dmg");
   await page.getByRole("link", { name: "Privacy", exact: true }).click();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Privacy, in plain language.",

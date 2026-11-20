@@ -26,7 +26,7 @@ pnpm test
 
 ## Installer files and Git LFS
 
-All four v0.4.1 installers live in `downloads/` and are tracked by Git LFS, as configured in `.gitattributes`. This release includes the agent prompt-cache improvements and more complete token/cost accounting. `downloads/release-0.4.1.json` records the source commit, build run and artifact checksums. The Mac downloads are separate for Apple Silicon and Intel. Windows is x64 NSIS; Linux is x86_64 AppImage. These are unsigned development previews, and macOS builds are not notarized.
+All four v0.4.2 installers live in `downloads/` and are tracked by Git LFS, as configured in `.gitattributes`. This release adds automatic version checks, a compact update notice, a manual Settings update check, and a fix that preserves unrelated preferences when a setting is changed. It retains the prompt-cache improvements from 0.4.1. `downloads/release-0.4.2.json` records the source commit, build run and artifact checksums. The Mac downloads are separate for Apple Silicon and Intel. Windows is x64 NSIS; Linux is x86_64 AppImage. These are unsigned development previews, and macOS builds are not notarized.
 
 To fetch actual installers after cloning:
 
